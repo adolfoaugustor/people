@@ -4,17 +4,18 @@ import { Text, View, StyleSheet } from 'react-native';
 import PeopleListItem from './PeopleListItem';
 
 const PeopleList = props => {
-	const { peoples } = props; 
+	const { peoples, onPressItem } = props; 
 
 	const items = peoples.map(people =>
 		<PeopleListItem 
 			key={people.name.first} 
-			people={people} />
+			people={people} 
+			navigateToDetail={onPressItem} />
 	);
 
 	return (
 		<View style={styles.container}>
-			{ items}
+			{ items }
 		</View>
 	)
 };

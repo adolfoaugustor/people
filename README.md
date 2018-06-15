@@ -1,8 +1,13 @@
 
 Project AgendaCellPhone
-<img src="Screenshot1.jpeg" alt="">
-<img src="Screenshot2.jpeg" alt="">
-<img src="cell.gif" alt="">
+<img src="Screenshot1.jpeg" alt="" style="width: 300px;">
+<img src="Screenshot2.jpeg" alt="" style="width: 300px;">
+<img src="cell.gif" alt="" style="width: 300px;">
+
+## Dependecias instaladas
+npm install axios --save
+npm install --save react-navigation
+
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
