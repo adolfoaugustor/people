@@ -1,8 +1,8 @@
 
 Project AgendaCellPhone
-<img src="Screenshot1.jpeg" alt="" style="max-width:200px; max-height:150px; width: auto; height: auto;">
-<img src="Screenshot2.jpeg" alt="" style="max-width:200px; max-height:150px; width: auto; height: auto;">
-<img src="cell.gif" alt="" style="max-width:200px; max-height:150px; width: auto; height: auto;">
+<img src="Screenshot1.jpeg" alt="" width="400px" height="350px">
+<img src="Screenshot2.jpeg" alt="" width="400px" height="350px">
+<img src="cell.gif" alt="" width="400px" height="350px">
 
 ## Dependecias instaladas
 npm install axios --save
