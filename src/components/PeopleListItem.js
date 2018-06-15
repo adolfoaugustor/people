@@ -1,13 +1,23 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
+
+import { capitalizeFirstLetter } from '../util';
+
 
 const PeopleListItem = props => {
 	const { people } = props; 
-	const { first, last } = people.name;
+	const { title, first, last } = people.name;
 	return(
 		<View key={first} style={styles.line}>
+			<Image style={styles.imgAvatar} source={{ uri: people.picture.thumbnail }} />
 			<Text style={styles.lineText}>
-				{ first }
+				{ `${
+					capitalizeFirstLetter(title)
+				} ${
+					capitalizeFirstLetter(first)
+				} ${
+					capitalizeFirstLetter(last)
+				}`}
 			</Text>
 		</View>
 	);
@@ -26,7 +36,12 @@ const styles = StyleSheet.create({
 	lineText:{
 		fontSize: 20,
 		paddingLeft: 15,
-	}
+	},
+	imgAvatar:{
+		aspectRatio: 1,
+		width:50,
+		// height:100,
+	},
 })
 
 export default PeopleListItem;
