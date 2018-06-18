@@ -11,7 +11,7 @@ export default StackNavigator({
 	},
 	'PeopleDetail':{
 		screen: PeopleDetailPage,
-		navigationOptions:({navigation}) =>{
+		navigationOptions: ({navigation}) => {
 			const peopleName = capitalizeFirstLetter(navigation.state.params.people.name.first);
 			return({
 				title: peopleName,
