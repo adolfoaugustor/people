@@ -2,6 +2,7 @@ import React from 'react';
 import { 
 	Text, 
 	View, 
+	ScrollView, 
 	Image, 
 	StyleSheet 
 } from 'react-native';
@@ -12,7 +13,7 @@ export default class PeopleDetailPage extends React.Component{
 		const { people 	} = this.props.navigation.state.params;
 
 		return (
-			<View style={styles.container}>
+			<ScrollView style={styles.container}>
 				<Image 
 					source={{ uri: people.picture.large }} 
 					style={styles.avatarLarge}/>
@@ -24,7 +25,7 @@ export default class PeopleDetailPage extends React.Component{
 					<Line label="Cel: " content={people.cell} />
 					<Line label="Nacionalidade: " content={people.nat} />
 				</View>
-			</View>
+			</ScrollView>
 		);
 	}
 }
